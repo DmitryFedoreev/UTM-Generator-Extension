@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTM Generator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="utm-generator">
+    <h2>Генератор UTM-меток</h2>
+
+    <!-- Базовая ссылка -->
+    <div class="input-container">
+      <label for="base-url" class="input-label">Введите базовую ссылку</label>
+      <input type="text" id="base-url" class="input-field">
+    </div>
+
+    <!-- UTM параметры -->
+    <div class="utm-fields">
+      <div class="input-container">
+        <label for="utm-source" class="input-label">utm_source</label>
+        <input type="text" id="utm-source" class="input-field">
+      </div>
+      <div class="input-container">
+        <label for="utm-medium" class="input-label">utm_medium</label>
+        <input type="text" id="utm-medium" class="input-field">
+      </div>
+      <div class="input-container">
+        <label for="utm-campaign" class="input-label">utm_campaign</label>
+        <input type="text" id="utm-campaign" class="input-field">
+      </div>
+      <div class="input-container">
+        <label for="utm-term" class="input-label">utm_term</label>
+        <input type="text" id="utm-term" class="input-field">
+      </div>
+      <div class="input-container">
+        <label for="utm-content" class="input-label">utm_content</label>
+        <input type="text" id="utm-content" class="input-field">
+      </div>
+      <div class="input-container">
+        <label for="marketing-tactic" class="input-label">Marketing Tactic</label>
+        <input type="text" id="marketing-tactic" class="input-field">
+      </div>
+    </div>
+
+    <!-- Финальная ссылка -->
+    <div class="output-container">
+      <label for="generated-url" class="output-label">Финальная ссылка</label>
+      <input type="text" id="generated-url" class="output-field" readonly>
+    </div>
+
+    <!-- Кнопка копирования -->
+    <button id="copy-btn" class="copy-button">
+      <span class="copy-button-text">Скопировать</span>
+      <span id="success-icon" class="success-icon">✔</span>
+    </button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
